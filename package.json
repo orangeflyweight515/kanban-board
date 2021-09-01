@@ -1,4 +1,5 @@
 {
+  "homepage": "http://orangeflyweight515.github.io/kanban-board",
   "name": "kanban-board-react",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "save": "^2.3.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "prestart": "npm install",
     "pretest": "npm install",
     "start": "cross-env HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
@@ -23,6 +26,7 @@
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
     "expect": "^26.1.0",
+    "gh-pages": "^3.2.3",
     "jest-junit": "^11.1.0",
     "react-test-renderer": "^16.13.1"
   },
